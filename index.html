@@ -5,16 +5,20 @@
     <title>Borhan's Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            margin-top: 100px;
+            margin-top: 50px;
             background-color: #f4f4f4;
             color: #333;
         }
 
         h1 {
-            font-size: 36px;
+            font-size: 25px;
         }
 
         p {
@@ -37,7 +41,6 @@
             color: white;
             text-decoration: none;
             border-radius: 5px;
-            margin-top: 20px;
             font-size: 16px;
             transition: background-color 0.2s;
         }
@@ -60,6 +63,22 @@
 
         .email:hover {
             background-color: #a7362b;
+        }
+
+        .cv {
+            background-color: #556b6f;
+        }
+
+        .cv:hover {
+            background-color: #455a5f;
+        }
+
+        .button-group {
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
         }
 
         .projects {
@@ -143,11 +162,18 @@
             .project-card {
                 text-align: center;
             }
+
+            .button-group {
+                flex-direction: column;
+                gap: 15px;
+            }
         }
     </style>
 </head>
 
 <body>
+    <h1>Borhan Javadian</h1>
+
     <img src="images/me.jpg" alt="My photo" class="profile-pic">
     <h2>About Me</h2>
     <p class="about">
@@ -155,11 +181,13 @@
         I love working on hands-on projects, exploring new tech, and occasionally (legally) hacking stuff.
     </p>
 
-    <p>
+    <div class="button-group">
         <a href="https://github.com/borhanxj" class="button" target="_blank">GitHub</a>
         <a href="https://linkedin.com/in/borhan-javadian-b0692a347" class="button linkedin" target="_blank">LinkedIn</a>
+        <a href="cv.pdf" class="button cv" target="_blank">CV</a>
         <a href="mailto:borhan.javadian@proton.me" class="button email">Email</a>
-    </p>
+    </div>
+
     <h2>Projects</h2>
 
     <div class="project-card">
